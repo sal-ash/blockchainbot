@@ -1,5 +1,4 @@
 # blockchainbot
-twitter bot which will post stats from different blockchains on a daily basis  
-aim is to begin with bitcoin daily transaction total  
-after transaction totals work will include approximate dollar value of transaction volume  
-final stage is to do the same for other blockchain  
+twitter bot which posts the daily transaction count of the Bitcoin network.
+This is done by querying Google Bigquery's live Bitcoin Dataset. The return value of the Query is then passed onto another script which posts the number to twitter on a daily basis.
+many thanks to @00jw for his help and support 
