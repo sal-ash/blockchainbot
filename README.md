@@ -5,7 +5,10 @@ The following python libraries are required to run this code:
 Tweepy    
 Google Cloud  
 Google oauth2  
+requests
   
 Make sure to install these within a virtual environment so as not to mess with your current python setup.  
+  
+An alternative set up for this bot is provided if you have trouble with the BigQuery dataset. This setup utilises the blockchain.com plaintext query API available [here](https://blockchain.info/q/24hrtransactioncount).  You will need to import the requests python library to run the alternative set up in addition to the tweepy library. As we are no longer using Bigquery neither of the Google libraries is needed.  
 
 Many thanks to @00jw for his help and support. 
