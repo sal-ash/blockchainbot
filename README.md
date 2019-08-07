@@ -16,7 +16,7 @@ An alternative set up for this bot is provided if you have trouble with the BigQ
 
 To run the code on AWS Lambda just add the below lambda_handler function to the bottom of tweetfunction.py or alternatetweet.py. You will also need to make sure that the dependencies and the scripts are all zipped on the same level directory and uploaded to lambda as a deployment package. it's best to do this on an AWS EC2 instance though it can be done locally if you are running a linux system. Check out [this link](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html) for more details on this.
 
-def lambda_handler(_event_json, _context):
-    tweet()
+def lambda_handler(_event_json, _context):  
+  tweet_transactions()
 
 Many thanks to @00jw for his help and support. 
